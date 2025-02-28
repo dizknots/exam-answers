@@ -7,15 +7,20 @@
  */
 public class AgeCalculator
 {
-    private int currentYear = 2025;
+private int currentYear = 2025;
     
-    //public int Age();{
-        //return Age;}
-    
-    //if(Age >= 16);{
-        //System.out.println("Eligeble to drive")}
-    
-    //else{
-        //System.out.println("Must wait"+ 16-Age +"more years to drive")}
-    
+public void setAge(int Age)
+{
+ Age = Age;
+ if(Age >= 16)
+ {
+    System.out.println(Age + " - Eligeble to drive");   
+ }
+ else 
+ {
+    System.out.println(Age + " - Ineligeble, must wait "+(16 - Age)+" more year(s) to drive");      
+ }
 }
+}
+
+
