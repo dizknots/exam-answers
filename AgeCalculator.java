@@ -9,9 +9,10 @@ public class AgeCalculator
 {
 private int currentYear = 2025;
     
-public void setAge(int Age)
+public void setAge(int YearOfBirth)
 {
- Age = Age;
+ YearOfBirth = YearOfBirth;
+ int Age= 2025 - YearOfBirth;
  if(Age >= 16)
  {
     System.out.println(Age + " - Eligeble to drive");   
