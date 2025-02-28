@@ -7,9 +7,31 @@
  */
 public class Salary
 {
- // 1. get values for workedhrs and $/hr
- // 2. set taxes = 30%
- // 3. set salary = workedhrs * $/hr
- // 4. set netpay = salary - salary * taxes
- // 5. print netpay
+ private int workedHours;
+ private int $perHour;
+ private double taxes = 3.0/10.0;
+ private double salary = workedHours * $perHour;
+ private double netpay = salary - salary * taxes;
+ 
+ public void setWorkedHours(int hours)
+ {
+    this.workedHours = hours;   
+ }
+ 
+ public void set$perHour(int hourlyWage)
+ {
+    this.$perHour = hourlyWage;   
+ }
+ 
+ public void getSalary()
+ {
+    salary = workedHours * $perHour;
+    System.out.println(salary);   
+ }
+ 
+ public void getNetPay()
+ {
+    netpay = salary - (salary * this.taxes);
+    System.out.println(netpay);
+ }
 }  
