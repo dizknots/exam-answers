@@ -23,7 +23,7 @@ public class Zoo
     //BlueBirdCount = 0 
     //search "blue"
     //while(found)
-    //System.out.println("Blue birds:"+ BlueBirdCount++
+    //System.out.println("Blue birds:"+ BlueBirdCount++)
 }
 
 
